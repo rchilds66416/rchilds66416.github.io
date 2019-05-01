@@ -1,34 +1,7 @@
 <html>
 <body>
 
-<h2>Application</h2>
-<p>Please enter all of your applicaiton info below</p>
-<form>
-First Name:<br>
-<input type ="text" name="firstname">
-<br>
-Last name:<br>
-<input type="text" name="lastname">
-<br>
-Email:<br>
-<input type = "text" name ="email">
-<br>
-Date of Birth:<br>
-<input type ="text" name="DateofBirth">
-<br>
-Major:<br>
-<input type = "text" name="Major">
-<br>
-Reason for Application:<br>
-<textarea rows="10" cols="50">Enter your reason for applying</textarea>
-<br><br>
-</form>
-<button onclick="submitForm()">Submit</button>
-  <script>
-    function submitForm()
-    {
-      alert("Your information has been submitted and is being reviewed.")
-    }
-    </script>
+<h2>Hello</h2>
+<p>This is the site used for holding the application</p>
 </body>
 </html>
