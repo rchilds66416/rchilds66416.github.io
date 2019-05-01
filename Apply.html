@@ -4,7 +4,7 @@
 
 <h2>Application</h2>
 <p>Please enter all of your applicaiton info below</p>
-<form method="post">
+<form>
 First Name:<br>
 <input type ="text" name="firstname">
 <br>
@@ -23,6 +23,7 @@ Major:<br>
 Reason for Application:<br>
 <textarea rows="10" cols="50">Enter your reason for applying</textarea>
 <br><br>
+</form>
 <button onclick="submitForm()">Submit</button>
   <script>
     function submitForm()
@@ -30,7 +31,5 @@ Reason for Application:<br>
       alert("Your information has been submitted and is being reviewed.")
     }
     </script>
-</form>
-
 </body>
 </html>
