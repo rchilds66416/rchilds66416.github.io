@@ -4,7 +4,7 @@
 
 <h2>Application</h2>
 <p>Please enter all of your applicaiton info below</p>
-<form action="received.php" method="post">
+<form method="post">
 First Name:<br>
 <input type ="text" name="firstname">
 <br>
@@ -23,7 +23,13 @@ Major:<br>
 Reason for Application:<br>
 <textarea rows="10" cols="50">Enter your reason for applying</textarea>
 <br><br>
-<input type="submit" value="Submit">
+<button onclick="submitForm()">Submit</button>
+  <script>
+    function submitForm()
+    {
+      alert("Your information has been submitted and is being reviewed.")
+    }
+    </script>
 </form>
 
 </body>
