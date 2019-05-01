@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html>
+<body>
 
-You can use the [editor on GitHub](https://github.com/rchilds66416/rchilds66416.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/rchilds66416/rchilds66416.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+<h2>Application</h2>
+<p>Please enter all of your applicaiton info below</p>
+<form>
+First Name:<br>
+<input type ="text" name="firstname">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+<br>
+Email:<br>
+<input type = "text" name ="email">
+<br>
+Date of Birth:<br>
+<input type ="text" name="DateofBirth">
+<br>
+Major:<br>
+<input type = "text" name="Major">
+<br>
+Reason for Application:<br>
+<textarea rows="10" cols="50">Enter your reason for applying</textarea>
+<br><br>
+</form>
+<button onclick="submitForm()">Submit</button>
+  <script>
+    function submitForm()
+    {
+      alert("Your information has been submitted and is being reviewed.")
+    }
+    </script>
+</body>
+</html>
