@@ -1,35 +1,135 @@
-<html>
-<body>
-  <center>
-<h2>Application</h2>
-<p>Please enter all of your applicaiton info below</p>
-<form>
-First Name:<br>
-<input type ="text" name="firstname">
-<br>
-Last name:<br>
-<input type="text" name="lastname">
-<br>
-Email:<br>
-<input type = "text" name ="email">
-<br>
-Date of Birth:<br>
-<input type ="text" name="DateofBirth">
-<br>
-<a href="https://www.pgcc.edu/programs-courses/program-finder/"target="_blank">Major:</a><br>
-<input type = "text" name="Major">
-<br>
-Reason for Application:<br>
-<textarea rows="10" cols="50">Enter your reason for applying</textarea>
-<br><br>
-</form>
-<button onclick="submitForm()">Submit</button>
-  <script>
-    function submitForm()
-    {
-      alert("Your information has been submitted and is being reviewed.")
-    }
-    </script>
+<!--This is the beginning of the style sheet of the form-->
+<style type="text/css">
+  .form-style-4{
+    font-size: 16px;
+    background: #718BA7;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid #53687E;
+  }
+  .form-style-4 input[type=submit],
+  .form-style-4 input[type=button],
+  .form-style-4 input[type=text],
+  .form-style-4 input[type=email],
+  .form-style-4 textarea,
+  .form-style-4 label
+  {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+  
+  }
+  .form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+  }
+  .form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+  }
+  .form-style-4 input[type=text],
+  .form-style-4 input[type=email] 
+  {
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+  }
+  .form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed #83A4C5;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+  }
+  
+  .form-style-4 textarea:focus, 
+  .form-style-4 input[type=text]:focus,
+  .form-style-4 input[type=email]:focus,
+  .form-style-4 input[type=email] :focus
+  {
+    border-bottom: 1px dashed #D9FFA9;
+  }
+  
+  .form-style-4 input[type=submit],
+  .form-style-4 input[type=button]{
+    background: #576E86;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: #A8BACE;
+  }
+  .form-style-4 input[type=submit]:hover,
+  .form-style-4 input[type=button]:hover{
+  background: #394D61;
+  }
+  html, body {
+      margin:0;
+      padding:0;
+  }
+  h1 {
+      margin:0;
+  }
+  </style>
+  <!--This is the end of the style sheet for the form-->
+  <html>
+  <body>
+    <center>
+      <!--This is the beginning of the form that makes use of the style sheet-->
+  <form class="form-style-4" action="" method="post">
+  <h2><font color="#fff">Application</font></h2>
+  <p><font color="#fff">Please enter all of your applicaiton info below</font></p>
+  <!--Each section of the form is a label as that is what is covered by the style sheet-->
+  <label for="firstname">
+  First Name:<br>
+  <input type ="text" name="firstname">
+  </label>
+  <br>
+  <label for="lastname">
+  Last name:<br>
+  <input type="text" name="lastname">
+  </label>
+  <br>
+  <label for="email">
+  Email:<br>
+  <input type = "email" name ="email">
+  </label>
+  <br>
+  <label for="DateofBirth">
+  Date of Birth:<br>
+  <input type ="text" name="DateofBirth">
+  </label>
+  <br>
+  <!--The "Major" label is a link, that opens in a new tab, to a program finder for people who need to check which major they'll take-->
+  <label for="Major">
+  <a href="https://www.pgcc.edu/programs-courses/program-finder/"target="_blank">Major:</a><br>
+  <input type = "text" name="Major">
+  </label>
+  <br>
+  <label for="rfa">
+  Reason for Application:<br>
+  <input type="text"name="rfa">
+  </label>
+  <br><br>
+  <input type="submit" onclick="submitForm()">
+  <!--This function simply holds the words that will be shown when someone clicks the submit button-->
+    <script>
+      function submitForm()
+      {
+        alert("Your information has been submitted and is being reviewed.")
+      }
+      </script>
+      <!--These line breaks are to extend the page background down to near the end-->
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  </form>
     </center>
-</body>
-</html>
+  </body>
+  </html>
